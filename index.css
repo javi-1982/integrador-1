@@ -107,11 +107,6 @@ nav{
     display: block;   
 }
 
-
-
-/* botones de ingreso y suscripcion*/
-
-
 .btn-accesos{
     margin: 0px;
     display: flex;
@@ -133,11 +128,8 @@ nav{
 
 .slider-box{
   width: 100%;
-  height: auto;  
   margin: 0px auto;
   overflow: hidden;
-
-
   margin-top: 72px;
 
 }
@@ -146,7 +138,8 @@ nav{
     display: flex;
     padding: 0;
     width: 400%;
-    animation: slide 12s infinite alternate ease-in-out;
+    height: 250px;
+    animation: slide 8s infinite alternate ease-in-out;
     
 }
 .slider-box li{
@@ -246,21 +239,21 @@ nav{
 }
 
 .banner-text h2{
-    font-size: 20px;
+    font-size: 40px;
     font-weight: 1000; 
     color: black;
     margin-top: -160px;   
 }
 
 .banner-text h1{
-    font-size: 30px;
+    font-size: 60px;
     font-weight: 1000; 
     color: black;
     margin-top: 10px;   
     margin-bottom: 30px;
 }
 
-.button1{
+/*.button1{
     margin-right: 10px;
     padding: 5px 15px;
     background-color: red;
@@ -286,16 +279,17 @@ nav{
     background-color: white;
     color: red;
     transition: .5s;
-}
+}*/
 
 /*seccion de carta*/
 
 .contenedorcard{
-    width: 90%;
+    width: 95%;
     margin-top: 30px; 
-    margin-left: 25px;
+    margin-left: 30px;
     padding: 0%;
-    justify-content: center;
+    display: flex;
+    
 
 }
 
@@ -325,7 +319,6 @@ nav{
 }
 
 .card h2{
-    
     font-weight: 600;
     width: 100%;
     margin-top: -25px;
@@ -333,6 +326,7 @@ nav{
     background-size: 300% 300%;
     animation: color 10s ease-in-out infinite;
     border: solid .5px;
+
 }
 
 @keyframes color{
@@ -409,21 +403,20 @@ nav{
 .box h1{
     margin: 25px 0px 0px;
     padding: 0px;
-    font-size: 22px;
-    
-
+    font-size: 28px;
 }
 
 
 
 .contenedorcompra{
+    width: 95%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; ***
 }
 
 .juego{
     margin-top: 50px;
+    margin-left: 60px; ***
     border-radius: 6px;
     overflow: hidden;
     background: #fff;
@@ -432,8 +425,8 @@ nav{
     transition: all 400ms ease;
     text-align: center;
     border-style: groove;
-    width: 95%;
-    height: 250px;
+    width: 80%;
+    height: 260px;
 }
 
 .juego img{
@@ -546,6 +539,7 @@ nav{
     color: black;
 }
 
+/*seccion de carta servicios*/
 .servi{
     display: flex;
     text-align: center;
@@ -566,31 +560,28 @@ nav{
     font-size: 25px;
 }
 
-
-/*seccion de carta servicios*/
-
 .servicios{
-    width: 90%;
-    margin-top: 30px; 
-    margin-left: 25px;
-    padding: 0%;
-    justify-content: center;
+    width: 95%;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr; ***
 
 }
 
 .servi-card{
     margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 50px;
     border-radius: 6px;
-    overflow: hidden;
     background: #fff;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
     cursor: default;
     transition: all 400ms ease;
-    text-align: center;
     border-style: groove;
-    width: 80%;
-    height: 380px;
+    width: 100%;
+    height: 420px;
+    justify-content: center;
+    text-align: center;
 
 }
 
@@ -607,22 +598,17 @@ nav{
     
     font-weight: 600;
     width: 100%;
-    margin-top: -25px;
+    margin-top: 20px;
     background: grey;
     border: solid .9px;
-}
-
-
-
-.servi-card p{
-    padding: 10px;
-    text-align: justify; 
+    font-size: 20px;
 }
 
 .servi-card h3{
     text-align: justify;
     margin: 10px;
     margin-top: 20px;
+    margin-bottom: 40px;
     font-weight: 500;
     
 }
@@ -630,15 +616,15 @@ nav{
 
 .servi-card a{
     text-decoration: none;
-    display: inline-block;
     padding: 10px;
-    margin-top: 35px;
     color: #2fb4cc;
     border: 1px solid #2fb4cc;
     border-radius: 4px;
     font-weight: 550;
-    transition: all 500ms ease;
+    justify-content: center;
+    transition: 0.5s;
 }
+
 
 
 .servi-card:hover{
@@ -651,430 +637,6 @@ nav{
     background: #2fb4cc;
     color: #fff; 
 }
-
-
-/*resolucion menor a 768px*/
-
-@media screen and (min-width:768px){
-
-    .logo-img{
-        margin-left: 1px;
-    }
-
-    .bar-btn{
-        display: none;
-    }
-
-    .carrito-btn{
-        margin-right: 20px;
-    }
-    
-    nav{
-        height: 100px;
-        
-    }
-
-    .nav-menu{
-        position: relative;
-        height: 100px;
-        top: 0;
-        background: none;
-        transition: none;
-        text-align: right;
-        margin-right: 50px;
-    }
-
-    .nav-menu li{
-        display: inline-block;
-        line-height: 60px;
-        margin: 5px;
-        transition: none;
-    }
-
-    .nav-menu li a{
-        font-size: 15px;
-    }
-
-
-    .banner-text{
-        justify-items: center;
-        margin-top: 280px;
-    
-    }
-
-    .banner-text h2{
-        font-size: 25px;
-        margin-top: -250px;
-        width: 210px;
-        margin-left: 40%;
-    }
-    .banner-text h1{
-        font-size: 60px;
-        margin-bottom: 30px;
-    }
-
-    .slider-box img{
-        width: 100%;
-        height: 60%;
-    }
-
-        /* botones de ingreso y suscripcion*/
-
-    .btn-accesos{
-        margin: 0px;
-        display: flex;
-        margin-top: 20px;
-        padding: 0px;
-        justify-content: right;
-        font-size: 28px;
-        margin-right: 15px;
-    }
-    
-    .usuario{
-        color: black;
-        margin-right: 10px;
-        margin: 10px;
-    }
-
-
-        /*seccion de carta*/
-
-    .contenedorcard{
-        width: 95%;
-        margin-top: 50px; 
-        display: flex;
-    }
-
-    .card{
-        margin: 20px;
-        border-radius: 6px;
-        overflow: hidden;
-        background: #fff;
-        box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-        cursor: default;
-        transition: all 400ms ease;
-        text-align: center;
-        border-style: groove;
-        width: 50%;
-    }
-
-    .card img{
-        width: 100%;
-        height: 40%;
-    }
-
-    .card p{
-        padding: 10px;
-        text-align: justify; 
-    } 
-    
-    .card h2{
-        font-weight: 600;
-    
-    }
-
-    .card h3{
-        text-align: justify;
-        margin: 10px;
-        margin-top: 20px;
-        font-weight: 500;
-        
-    }
-
-   
-    .card a{
-        text-decoration: none;
-        display: inline-block;
-        padding: 10px;
-        margin-top: 20px;
-        color: #2fb4cc;
-        border: 1px solid #2fb4cc;
-        border-radius: 4px;
-        font-weight: 550;
-        transition: all 500ms ease;
-    }
-
-
-    .card:hover{
-        box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
-        /*transform: translateY(-3%);*/
-        transform-origin: 50%;
-    }
-
-    .card a:hover{
-        background: #2fb4cc;
-        color: #fff; 
-    }
-
-        /*seccion de compra*/
-
-    .box{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        margin-top: 40px;
-        font-size: 25px;
-        border: solid rgb(143, 130, 130);
-
-
-    }
-
-    .contenedorcompra{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin-top: 40px;
-        margin-right: 45px;
-    }
-
-    .juego{
-        margin-top: 20px;
-        margin-left: 50px;
-        border-radius: 6px;
-        overflow: hidden;
-        background: #fff;
-        box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-        cursor: default;
-        transition: all 400ms ease;
-        text-align: center;
-        border-style: groove;
-        width: 80%;
-        height: 380px;
-    }
-
-    .juego img{
-        width: 80%;
-        height: 60%;
-        margin-top: 5px;
-        padding: 0px;
-        border: solid rgb(214, 210, 237);
-
-    }
-
-    .juego h2{
-
-        font-weight: 600;
-        width: 100%;
-        margin-top: -10px;
-        font-size: 12px;
-
-    }
-
-
-    .juego p{
-        padding: 5px;
-        display: flex;
-        justify-content: center;
-        font-size: 8px;
-    }
-
-
-    .juego h3{
-        text-align: justify;
-        margin: 10px;
-        margin-top: 8px;
-        font-weight: 500;
-        font-size: 18px;
-    }
-    .juego h4{
-        text-align: justify;
-        margin-left: 10px;
-        margin-top: -8px;
-        font-size: 10px;
-        padding: 0px;
-    }
-
-
-    .juego a{
-        text-decoration: none;
-        display: flex;
-        padding: 5px;
-        margin-top: 40px;
-        margin-right: 10px;
-        color: #2fb4cc;
-        border: 1px solid #2fb4cc;
-        border-radius: 4px;
-        font-weight: 550;
-        justify-content: center;
-        font-size: 15px;
-    }
-
-
-    .juego:hover{
-        box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
-        /*transform: translateY(-3%);*/
-        transform-origin: 50%;
-    }
-
-    .juego a:hover{
-        background: #2fb4cc;
-        color: #fff; 
-    }
-
-
-        /*envio|tarjeta|seguridad*/
-
-    .informacion-icon{
-        border: solid black;
-        margin-top: -160px;
-        height: 60px;
-        background: rgb(157, 159, 157);
-    }
-
-    .informacion-icon h4{
-        color: black;
-        font-size: 20px;
-        margin-left: 15px;
-    }
-    .br{
-        color: black;
-        font-size: 12px;
-        margin-top: 25px;
-        margin-left: -198px;
-    }
-
-    .br1{
-        color: black;
-        font-size: 12px;
-        margin-top: 25px;
-        margin-left: -285px;
-    }
-    .br2{
-        color: black;
-        font-size: 12px;
-        margin-top: 25px;
-        margin-left: -235px;
-    }
-
-    .icon-camion{
-        display: flex;
-        width: 380px;
-        color: black;
-        font-size: 30px;
-        margin-top: 7px;
-        margin-left: 100px;
-    }
-
-    .icon-tarjeta{
-        display: flex;
-        width: 480px;
-        color: black;
-        font-size: 30px;
-        margin-top: 7px;
-    }
-
-    .icon-candado{
-        display: flex;
-        width: 370px;
-        color: black;
-        font-size: 30px;
-        margin-top: 7px;
-    }
-
-    .servi{
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        margin-top: 20px;
-      
-    
-        width: 100%;
-        height: 80px;
-        background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
-        background-size: 300% 300%;
-        animation: color 10s ease-in-out infinite;
-
-        border: solid rgb(143, 130, 130);
-    }
-    
-    .servi h1{
-        margin: 25px 0px 0px;
-        padding: 0px;
-        font-size: 25px;
-    
-    }
-
-
-
-    /*seccion de carta servicios*/
-
-    .servicios{
-        width: 95%;
-        margin-top: 50px; 
-        display: flex;
-    }
-
-    .servi-card{
-        margin: 20px;
-        border-radius: 6px;
-        overflow: hidden;
-        background: #fff;
-        box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
-        cursor: default;
-        transition: all 400ms ease;
-        text-align: center;
-        border-style: groove;
-        width: 25%;
-    }
-
-    .servi-card img{
-        width: 80%;
-        height: 40%;
-    }
-
-    .servi-card p{
-        padding: 10px;
-        text-align: justify; 
-    } 
-    
-    .servi-card h2{
-        font-weight: 600;
-    
-    }
-
-    .servi-card h3{
-        text-align: justify;
-        margin: 10px;
-        margin-top: 20px;
-        
-    }
-
-   
-    .servi-card a{
-        text-decoration: none;
-        display: inline-block;
-        margin-top: 20px;
-        color: #2fb4cc;
-        border: 1px solid #2fb4cc;
-        border-radius: 4px;
-        font-weight: 550;
-        transition: all 500ms ease;
-    }
-
-
-    .servi-card:hover{
-        box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
-        /*transform: translateY(-3%);*/
-        transform-origin: 50%;
-    }
-
-    .servi-card a:hover{
-        background: #2fb4cc;
-        color: #fff; 
-    }
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*footer*/
@@ -1150,3 +712,411 @@ nav{
     opacity: 0.75;
 }
 
+/*resolucion a 1920px*/
+
+@media screen and (max-width:1920px){
+
+
+    /*heder*/
+
+    .logo-img{
+        margin-left: 1px;
+    }
+
+    .bar-btn{
+        display: none;
+    }
+
+    .carrito-btn{
+        margin-right: 20px;
+    }
+    
+    nav{
+        height: 100px;
+        
+    }
+
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .nav-menu li{
+        display: inline-block;
+        line-height: 60px;
+        margin: 5px;
+        transition: none;
+    }
+
+    .nav-menu li a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:768px){
+
+
+    /*header*/
+    
+    .bar-btn{
+        font-size: 27px;
+        color: black;
+        margin-right: 15px;
+        cursor: pointer;
+        margin-bottom: 25px; 
+        display: inline;
+    }
+    
+    .carrito-btn{
+        font-size: 25px;
+        color: black;
+        margin-right: 10px;
+        cursor: pointer;
+        margin-top: 22px;
+    }
+    
+    .nav-menu{
+        position:fixed;
+        width: 100%;
+        height: 0px;
+        top: 70px;
+        background: gray;
+        text-align: center;  
+        transition: all .7s;
+    }
+    
+    .nav-menu li{
+        display: none;
+        line-height: 15px;
+        margin: 25px 0;
+        transition: all .9s;
+    }
+
+    .ws{
+        width: 40px;
+        margin-top: 15px;
+        margin-right: 20px;
+        
+    }
+
+    /*slider*/
+
+    .slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    height: 148px;
+    animation: slide 12s infinite alternate ease-in-out;
+    
+}
+
+
+/*envio|tarjeta|seguridad*/
+
+.informacion-icon{
+    border: solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: left;
+    height: 60px;
+    width: 100%;
+    background: rgb(157, 159, 157);
+    overflow: hidden;
+    padding: 0px;
+}
+
+.informacion-icon h4{
+    color: black;
+    font-size: 10px;
+    margin-left: 5px;
+}
+.br{
+    display: none;
+}
+
+.br1{
+    display: none;
+}
+.br2{
+    display: none;
+}
+
+.icon-camion{
+    display: flex;
+    width: 100px;
+    color: black;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.icon-tarjeta{
+    display: flex;
+    width: 150px;
+    color: black;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.icon-candado{
+    display: flex;
+    width: 100px;
+    color: black;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+/*banner*/
+
+.banner-text h2{
+    font-size: 20px;
+    font-weight: 1000; 
+    color: black;
+    margin-top: -160px;   
+}
+
+.banner-text h1{
+    font-size: 30px;
+    font-weight: 1000; 
+    color: black;
+    margin-top: 0px;   
+    margin-bottom: 30px;
+}
+
+/*cartas*/
+
+.contenedorcard{
+    width: 1fr 1fr 1fr 1fr;
+    margin-top: -5px; 
+    padding: 0%;
+    display: flex;
+    align-items: stretch;
+    margin-left: 15px;
+}
+
+
+.card{
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    margin-top: 20px;
+    margin: 2px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
+    cursor: default;
+    transition: all 400ms ease;
+   
+    border-style: groove;
+    width: 100%;
+    height: 300px;
+
+}
+
+.card img{
+    width: 100%;
+    height: 40%;
+    margin-top: 5px;
+    padding: 0px;
+    border: solid rgb(214, 210, 237);
+
+}
+
+.card h2{
+    
+    font-weight: 600;
+    width: 100%;
+    font-size: 15px;
+    margin-top: -25px;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation: color 10s ease-in-out infinite;
+    border: solid .5px;
+}
+
+
+.card h3{
+    width: 100%;
+    padding: 5px;
+    margin-top: 0px;
+    margin-bottom: -30px;
+    margin-left: -0.5px;
+    font-size: 10px;
+}
+
+.card a{
+
+    margin-bottom: auto;
+    text-align: center;
+
+
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    font-weight: 550;
+    transition: all 500ms ease;
+    
+}
+
+
+/*seccion tarjetas de compra*/
+
+.box{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    border: solid rgb(143, 130, 130);
+    width: 100%;
+    height: 80px;
+    background-size: 300% 300%;
+    animation: color 10s ease-in-out infinite;
+}
+
+.box h1{
+    margin: 5px 0px 0px;
+    padding: 0px;
+    font-size: 28px;
+}
+
+
+
+.contenedorcompra{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.juego{
+    margin-top: 50px;
+    margin-left: 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
+    cursor: default;
+    transition: all 400ms ease;
+    text-align: center;
+    border-style: groove;
+    width: 95%;
+    height: 260px;
+}
+
+.juego img{
+    width: 80%;
+    height: 50%;
+    margin-top: 5px;
+    padding: 0px;
+}
+/*seccion de carta servicios*/
+.servi{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    animation: color 10s ease-in-out infinite;
+    background-size: 100% 100%;
+    border: solid rgb(143, 130, 130);
+
+}
+
+.servi h1{
+    margin: 20px 0px 0px;
+    padding: 0px;
+    font-size: 25px;
+}
+
+.servicios{
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 0px;
+    
+
+}
+
+.servi-card{
+
+    margin-top: 10px;
+    margin: 1px;
+    padding: 0px;
+    gap: 0px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.8);
+    cursor: default;
+    transition: all 400ms ease;
+    border-style: groove;
+    height: 310px;
+    text-align: center;
+
+}
+
+.servi-card img{
+    width: 100%;
+    height: 30%;
+    margin-top: 5px;
+    padding: 0px;
+    border: solid rgb(214, 210, 237);
+
+}
+
+.servi-card h2{
+    
+    width: 100%;
+    margin-top: -5px;
+    background: grey;
+    border: solid .9px;
+    font-size: 15px;
+}
+
+.servi-card h3{
+    text-align: justify;
+    margin: 0px;
+    padding: 5px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    text-justify: center;
+    
+}
+
+
+.servi-card a{
+    text-decoration: none;
+    padding: 5px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    justify-content: center;
+    transition: 0.5s;
+    font-size: 12px;
+   
+  
+}
+
+
+
+.servi-card:hover{
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+    transform-origin: 50%;
+    
+}
+
+.servi-card a:hover{
+    background: #2fb4cc;
+    color: #fff; 
+}
